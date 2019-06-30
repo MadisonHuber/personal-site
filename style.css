@@ -92,6 +92,7 @@ h1, h2, h3, h4, h5, h6 {
     .content {
         max-width: 90ch;
         margin-left: 18%;
+        margin-right: 18%;
     }
     p {
         padding: 2%;
