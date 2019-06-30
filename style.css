@@ -43,20 +43,16 @@ a {
     margin-right: 0%;
     display: flex;
     justify-content: flex-start;
-    /* background-color: #a7cfce; */
     background: #c5dde4;
 }
 .choice {
     font-family: "Lora", serif;
     font-size: 150%;
-    /* color: #eeebe6; */
-    /* color: #569089; */
     padding: 0.5%;
     width: 25%;
     text-align: center;
 }
 .choice:link, .choice:visited, .choice:active {
-    /* color: #eeebe6; */
     color: #569089;
     text-decoration: none;
 }
@@ -65,44 +61,107 @@ a {
     background-color: #83bbb4;
 }
 body {
-    /* background-color: #e7ded1; */
     background-color: #eeebe6;
     font-size: 18px;
     font-family: 'Open Sans', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    /* color: #83bbb4; */
     color: #569089;
-    padding: 2%;
-    margin-left: 18%;
-    padding-top: 3%;
     font-family: 'Lora', serif;
 }
 
 .content {
-    max-width: 90ch;
-    margin-left: 18%;
     line-height: 140%;
 }
 
-p {
-    padding: 2%;
-    padding-top: 1%;
-}
-.pic {
-    float: right;
-    width: 200px;
-    padding: 5px;
-    padding-right: 18px;
-    margin-left: 10px;
-    margin-top: 20px;
-}
+
+
 .main {
     margin: 0%;
     padding: 0%;
     padding-top: 1%;
-    padding-left: 18%;
     background: #c5dde4;
     font-family: 'Rochester', cursive;
+}
+
+@media only screen and (min-width: 401px) {
+    .main {
+        padding-left: 18%;
+    }
+    .content {
+        max-width: 90ch;
+        margin-left: 18%;
+    }
+    p {
+        padding: 2%;
+        padding-top: 1%;
+    }
+    h1 {
+        padding: 2%;
+        margin-left: 18%;
+        padding-top: 3%;
+    }
+    .pic {
+        float: right;
+        width: 200px;
+        padding: 5px;
+        padding-right: 18px;
+        margin-left: 10px;
+        margin-top: 20px;
+    }
+
+}
+
+@media only screen and (max-width: 400px) {
+    body {
+        padding-left: 1%;
+        padding-right: 1%;
+        width: 100%;
+    }
+
+    .top {
+        overflow: scroll;
+        display: flex;
+        justify-content: space-between;
+        overflow: wrap;
+        flex-direction: column;
+    }
+    .choice {
+        font-size: 2.2vh;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+    .main {
+        font-size: 4vh;
+        position: relative;
+        top: 2px;
+        text-align: center;
+        margin: 0%;
+        padding: 0 0 0 0;
+    }
+    h1 {
+        font-size: 170%;
+        padding-top: 4%;
+        padding-bottom: 4%;
+        padding-left: 1%;
+    }
+    .pic {
+        padding: 2%;
+        width: 90%;
+        height: auto;
+        display: flex;
+        /* margin-top: 0%;
+        margin-bottom: 0%; */
+    }
+    .content {
+        width: 100%;
+        padding: 0 0 0 0;
+    }
+    p {
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
 }
