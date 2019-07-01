@@ -25,10 +25,22 @@
         <h2>Travel Blog</h2>
         <p>During summer of 2019 I studied abroad for a web development course and also traveled around Europe for a week before the class started, so while I was abroad I made a travel blog using HTML, CSS, TypeScript, React, Handlebars, Express, Netlify, MySQL, and AWS. It's accessible <a href="http://maddie.introcs.com/">here</a> if you want to check it out.</a></p>
         <h2>Unix Utilities</h2>
-        <p>This series of projects was completed in spring 2019 as part of the COMP590 Systems Programming course, though I added additional functionality and extensions along the way that were not required for coursework. They are all written in Rust, and details about each are given below:</p>
+        <p>This series of projects was completed in spring 2019 as part of the COMP590 Systems Programming course, though I added additional functionality and extensions along the way that were not required for coursework. They are all command-line applications written in Rust, and details about each are given below:</p>
         <h3>egrep</h3>
         <p>
             On this project, I worked with a peer, breaking the program into stages of tokenization, parsing, construction of an NFA, and use of that NFA to test input strings against a regular expression. We worked in a ping-pong pair-programming approach with test-driven development. There is support for concatenating NFAs, and it is also possible to view DOT visualizations of the created NFAs. Supported operations include concatenation, alternation (|), kleene star (*), any character (.), and kleene plus (+).
+        </p>
+        <h3>bc</h3>
+        <p>
+            I built up the Basic Calculator as a recursive descent parser. It takes in mathematical expressions in infix notation and emits the equivalent postfix notation expression to be used with the dc program in order to then perform the calculation. Additionally, I added support for exponentiation and register assignment.
+        </p> 
+        <h3>dc</h3>
+        <p>
+            For the Desk Calculator, I tokenized input that came in the form of reverse-polish notation mathematical expressions then implemented a stack machine to process the tokens and carry out their instructions. Support for exponentiation and registers was also included.
+        </p>
+        <h3>echo</h3>
+        <p>
+            This implementation includes support for select escape sequences and other options based on flags passed in by the user.
         </p>
     </div>
 </body>
