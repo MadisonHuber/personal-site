@@ -1,0 +1,7 @@
+[build]
+    # root of package.json, etc
+    base = "./"
+    # command to run production build
+    command = "npm run build"
+    # publish directory
+    publish = "dist/"
